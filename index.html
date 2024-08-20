@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>JS Quizz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="author">
+        <p>Developed By Zafir Muhammad</p>
+    </div>
+    <div class="container">
+        <h1>JavaScript Quizz App </h1>
+        <div class="main-wrapper">
+            <div class="inputs">
+                <input id="username" type="text" required>
+                <label for="">Enter Your Name:</label>
+                <div class="line-animation"></div>
+                <p id="valid"></p>
+                <button class="start_button">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <p class="student"></p>
+        <div class="question-number">
+            <p>Question no:&nbsp; <span id="question-number"></span> <span id="js-questions"></span> </p>
+            <div class="backwards-timer">
+                <span id="timer">01 Min 60 Sec</span>
+            </div>
+        </div>
+        <div class="questions-boxes">
+            <h3 id="Questions"></h3>
+            <div class="alignment question1"></div>
+            <div class="alignment question2"></div>
+            <div class="alignment question3"></div>
+            <div class="alignment question4"></div>
+            <button class="next-button">Next</button>
+        </div>
+    </div>
+
+    <div class="result-section">
+        <h3>Thank You, <span id="user-name"></span> for Participating!</h3>
+        <div class="result-remarks">
+            <h4 id="performance"></h4>
+            <hr>
+            <div class="result-table">
+                <div class="stats">
+                    <span>Total Questions:</span>
+                    <span id="total-questions">0</span>
+                </div>
+                <div class="stats">
+                    <span>Attempted:</span>
+                    <span id="attempted-questions">0</span>
+                </div>
+                <div class="stats">
+                    <span>Correct:</span>
+                    <span id="correct-answers">0</span>
+                </div>
+                <div class="stats">
+                    <span>Wrong:</span>
+                    <span id="wrong-answers">0</span>
+                </div>
+                <div class="stats">
+                    <span>Percentage:</span>
+                    <span id="percentage">0%</span>
+                </div>
+            </div>
+            
+            <div class="button-section">
+                <button class="try-again">Try Again</button>
+                <a href='/'><button class="go-home">Go to Home</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="app.js"></script>
+</html>
